@@ -1,5 +1,5 @@
 FROM  debian:latest
-RUN apt-get update && apt-get install libssl-dev git make gcc  -y --no-install-recommends 
+RUN apt-get update && apt-get install libssl-dev git make gcc ca-certificates -y --no-install-recommends 
 WORKDIR /opt/
 RUN git clone https://github.com/tlbdk/n2n_v2.git
 WORKDIR /opt/n2n_v2/
